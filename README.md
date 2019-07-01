@@ -5,4 +5,4 @@
 
 ### Update
 
-- Обновлен Dockerfile с использованием multi-stage builds
+- Обновлен Dockerfile с использованием multi-stage builds и sort multi-line arguments
