@@ -5,4 +5,4 @@
 
 ### Update
 
-- Добавлен отдельный Dockerfile в каталоге dockerfile_tomcat для сборки образа на основе чистого образа tomcat
+- Обновлен Dockerfile с использованием multi-stage builds
