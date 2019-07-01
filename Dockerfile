@@ -2,10 +2,10 @@ FROM ubuntu:16.04 AS build
 
 MAINTAINER d.ermizin <kernel218@gmail.com>
 # update system and install packages
-RUN apt-get update && apt-get install -y 
+RUN apt-get update && apt-get install -y \
   default-jdk \
   git \
-  maven \
+  maven
 # clone from git and deploy war-file
 RUN mkdir maven_build  && git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git maven_build
 RUN cd maven_build && mvn package
