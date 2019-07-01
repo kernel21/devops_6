@@ -8,7 +8,7 @@ RUN apt-get install -y maven git tomcat8 default-jdk
 ENV CATALINA_HOME /usr/share/tomcat8
 ENV CATALINA_BASE /var/lib/tomcat8
 ENV PATH $CATALINA_HOME/bin:$PATH
-# clone from git and deploy war-file 
+# clone from git and deploy war-file
 RUN mkdir maven_build
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git maven_build
 RUN cd maven_build && mvn package
