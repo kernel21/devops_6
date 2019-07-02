@@ -2,7 +2,7 @@ FROM ubuntu:16.04 AS build
 
 MAINTAINER d.ermizin <kernel218@gmail.com>
 # update system and install packages
-RUN apt-get update && apt-get install -y \
+RUN apt-get update -qq && apt-get install -yqq \
   default-jdk \
   git \
   maven
